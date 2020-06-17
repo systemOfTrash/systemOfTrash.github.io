@@ -1,0 +1,405 @@
+/* === pagina index === */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-color: #F8F9F9;
+}
+.cabecalho {
+    background-color: #fff;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #e8e8e8;
+
+}
+
+.logo img {
+    height: 45px;
+    width: 45px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #50d3c6;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: normal;
+    margin-left: 15px;
+    font-size: 16px;
+}
+
+.links a:hover {
+    border-bottom: 2px solid #50d3c6;
+    padding-bottom: 3px;
+
+}
+.foto_index{
+    /* background-color: yellow; */
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+.foto_index img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.frase {
+    /* background-color: yellow; */
+    width:400px;
+    height: 250px;
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    bottom: 130px;
+    right: 90px;
+    font-family: 'Roboto Condensed', sans-serif;
+    opacity: 0;
+    animation-name: up;
+    animation-duration: 700ms;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 700ms;
+}
+@keyframes up {
+    from{
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+    }
+}
+.frase p {
+    font-size: 25px;
+}
+.cards {
+    background-color: #EBEBEB;
+    width: 100%;
+    height: 600px;
+    margin-top: 60px;
+}
+.container {
+    /* background-color:black; */
+    width: 75%;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+    margin: 30px 0 30px 0;
+    height: 300px;
+    width: 310px;
+    /* background-color: rgb(83, 64, 58); */
+    border: 2px solid #D3D3D3;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: normal;
+    background-color:#FFFFFF;
+}
+.foto {
+    width: 100%;
+    height: 50%;
+    position: relative;
+    margin-bottom: 16px;
+}
+.foto img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+button {
+    background-color: #5EF4E3;
+    border-radius: 4px;
+    align-self: start;
+    padding: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+    border: none;
+    margin: 8px 0px 4px 0px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-weight:bold;
+    color: 	#1C1C1C;
+    margin-left: 16px;
+    cursor: pointer;
+
+}
+.texto {
+    padding: 0px 16px;
+    text-align: start;
+    color: #777;
+}
+.links a.ativo {
+    border-bottom: 2px solid #50d3c6;
+    padding-bottom: 3px;
+}
+footer{
+    height: 50px;
+    background-color: #333333;
+    color: #777;
+    display: flex;
+    align-items: center;
+}
+footer p {
+    padding-left: 50px;
+}
+.problema {
+    position: relative;
+    width: 75%;
+    height: 300px;
+    margin: 20px auto;
+    /* background-color: greenyellow; */
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    grid-template-areas: 'foto texto';
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.problema img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    grid-area: foto;
+    padding: 5px;
+    border-radius: 16px;
+}
+.texto_problema {
+    grid-area: texto;
+    padding: 20px;
+
+}
+.texto_problema h2 {
+    color: #5B5C61;
+}
+.texto_problema p {
+    text-align: start;
+    color: #8E8D90;
+    font-size: 18px;
+}
+.problema2 {
+    position: relative;
+    width: 75%;
+    height: 300px;
+    margin: 20px auto;
+    /* background-color: greenyellow; */
+    display: grid;
+    grid-template-columns: 1fr 40%;
+    grid-template-areas: 'texto foto';
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.problema2 img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    grid-area: foto;
+    padding: 5px;
+    border-radius: 16px;
+}
+.texto_problema2 {
+    grid-area: texto;
+    padding: 20px;
+
+}
+.texto_problema2 h2 {
+    color: #5B5C61;
+}
+.texto_problema2 p {
+    text-align: start;
+    color: #8E8D90;
+}
+
+/* === pagina contato === */
+
+.container_contato {
+    width: 100%;
+    height: 550px;
+    background-color: #EBEBEB;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.fundoFormulario {
+    width: 25%;
+    height: 450px;
+    background-color: white;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formulario p {
+    color: #666;
+}
+.formulario input{
+    width: 250px;
+    height: 30px;
+    border-radius: 4px;
+    margin: 8px 0;
+}
+.formulario textarea{
+    width: 250px;
+    height: 160px;
+    border-radius: 4px;
+    margin: 8px 0;
+}
+
+
+
+.googleMaps {
+    background-color: white;
+    width: 95%;
+    height: 350px;
+    border-radius: 16px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.googleMaps iframe {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+
+}
+.inputForm {
+    background-color: #EBEBEB;
+    border: 1px solid #d8d8d8;
+}
+button {
+    padding: 6px;
+    border-radius: 8px;
+    color: white;
+    background-color: #50d3c6;
+}
+button a {
+    text-decoration: none;
+    color: white;
+}
+.mapa {
+    height: 450px;
+    width: 40%;
+    /* background-color: yellow; */
+}
+.mapa p{
+    margin-top: 20px;
+    margin-left: 20px;
+    color: #555;
+}
+.endereco {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: #555;
+}
+
+.telefone {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: #555;
+}
+/* === Pagina quemSomos === */
+
+.fundo_quemSomos {
+    width: 100%;
+    height: 750px;
+    background-color: #EBEBEB;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.container_quemSomos {
+    width: 80%;
+    height: 400px;
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 16px;
+
+
+}
+.container_quemSomos img {
+    height: 200px;
+    position: absolute;
+    top: -150px;
+    border-radius:16px;
+}
+.texto_quemSomos {
+    position: absolute;
+    height: 280px;
+    width: 1000px;
+    bottom: 10px;
+    /* background-color: yellow; */
+}
+.texto_quemSomos h3 {
+    color: #50d3c6;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.texto_quemSomos p {
+    font-size: 22px;
+    color: #555;
+    text-align: center;
+}
+/* === Pagina Servicos === */
+
+.container_servicos {
+    width: 100%;
+    min-height: 476px;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+.card_servicos {
+    width: 70%;
+    height: 170px;
+    margin: 20px auto 10px auto;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: 'foto texto';
+    position: relative;
+    color: #555;
+}
+.card_servicos img {
+    grid-area: foto;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    justify-self: center;
+    align-self: center ;
+    border: 3px solid white;
+    box-shadow: 2px 3px 10px #333;
+
+}
+.card_servicos p {
+    grid-area: texto;
+    align-self: center;
+    font-size: 20px;
+}
+.container_servicos .card_servicos:last-child {
+    margin-bottom: 50px;
+}
+.container_servicos h3{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #50d3c6;
+    text-align: center;
+    font-size: 33px;
+    margin: 30px;
+    text-transform: uppercase;
+}
